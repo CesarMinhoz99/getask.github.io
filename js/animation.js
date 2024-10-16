@@ -1,18 +1,18 @@
-// animation.js
-
-// Função para ocultar a mensagem de boas-vindas
-function hideWelcomeMessage() {
-    const message = document.getElementById('welcome-message');
-    const description = document.getElementById('welcome-description');
-
-    message.classList.add('fade-out'); // Adiciona a classe de animação
-    description.classList.add('fade-out'); // Adiciona a classe de animação
-
-    setTimeout(() => {
-        message.classList.add('hidden'); // Esconde o elemento após a animação
-        description.classList.add('hidden'); // Esconde o elemento após a animação
-    }, 1000); // 1000 milissegundos = 1 segundo (duração da animação)
+function showJobList() {
+    const jobList = document.getElementById('job-list');
+    jobList.classList.remove('hidden'); // Mostra os cartões
 }
 
+// Função para remover a mensagem de boas-vindas após um tempo
+function removeWelcomeMessage() {
+    const welcomeMessage = document.getElementById('welcome-message');
 
-setTimeout(hideWelcomeMessage, 100);
+    // Define um tempo para remover a mensagem (ex: 3 segundos)
+    setTimeout(() => {
+        welcomeMessage.remove(); // Remove a mensagem do DOM
+        showJobList(); // Mostra os cartões
+    }, 1000); // 3000 milissegundos = 3 segundos
+}
+
+// Inicia a animação ao carregar o documento
+document.addEventListener('DOMContentLoaded', removeWelcomeMessage);

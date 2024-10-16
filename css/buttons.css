@@ -4,12 +4,12 @@
     color: #003366;
     /* Azul escuro */
     padding: 15px 30px;
-    /* Tamanho padrão dos botões */
+    /* Tamanho do botão */
     text-decoration: none;
     border-radius: 8px;
-    /* Bordas menos arredondadas */
+    /* Bordas arredondadas */
     font-size: 16px;
-    /* Tamanho da fonte ajustado */
+    /* Tamanho da fonte */
     font-weight: bold;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -24,64 +24,28 @@
     transform: translateY(-3px);
 }
 
-/* Ajuste para botões menores */
-.btn.small {
-    padding: 8px 12px;
-    /* Botão menor */
-}
-
 /* Estilo do botão de fechar */
 .close-btn {
     background-color: red;
     /* Vermelho */
     color: #FFFFFF;
     /* Branco */
-    border: none;
-    /* Remove a borda */
-    padding: 10px 15px;
+    padding: 15px 30px;
+    /* Mesma altura dos outros botões */
+    border-radius: 8px;
+    /* Bordas arredondadas */
     font-size: 16px;
-    /* Tamanho da fonte ajustado */
+    /* Tamanho da fonte */
     font-weight: bold;
     cursor: pointer;
-    border-radius: 8px;
-    /* Mesma borda arredondada que os outros botões */
-    margin-right: 10px;
-    /* Espaçamento à direita do botão de fechar */
+    border: none;
+    /* Remove borda padrão */
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .close-btn:hover {
+    background-color: darkred;
+    /* Tom mais escuro de vermelho no hover */
     transform: translateY(-3px);
-}
-
-/* Estilos para dispositivos móveis */
-nav {
-    background-color: #000000;
-    /* Preto */
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    /* Centraliza os botões */
-    align-items: center;
-    gap: 10px;
-    /* Espaçamento entre os botões */
-    flex-wrap: nowrap;
-    /* Impede que os botões se movam para a linha de baixo */
-    overflow-x: auto;
-    /* Adiciona rolagem horizontal se necessário */
-}
-
-@media (max-width: 768px) {
-    .btn {
-        padding: 10px 20px;
-        /* Menor espaçamento para botões em mobile */
-        font-size: 14px;
-        /* Tamanho da fonte ajustado para mobile */
-    }
-
-    nav {
-        flex-wrap: nowrap;
-        /* Impede que os botões se movam para a linha de baixo */
-        gap: 10px;
-        /* Menor espaçamento entre os botões */
-    }
+    /* Efeito de elevação no hover */
 }

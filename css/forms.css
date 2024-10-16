@@ -34,13 +34,6 @@
     /* Remove a borda padrão do foco */
 }
 
-/* Estilos para o grupo de botões */
-.button-group {
-    display: flex;
-    justify-content: space-between;
-    /* Espaçamento entre os botões */
-}
-
 .warning {
     color: red;
     /* Cor do texto do aviso */
@@ -48,12 +41,4 @@
     /* Tamanho da fonte */
     margin-top: 10px;
     /* Espaçamento acima do aviso */
-}
-
-/* Estilos para o botão de procurar trabalho */
-.btn.small {
-    padding: 8px 12px;
-    /* Botão menor */
-    border: none;
-    /* Remove a borda */
 }
