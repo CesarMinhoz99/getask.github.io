@@ -4,16 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Responsividade para dispositivos móveis -->
     <title>Getask - Conecte-se com Oportunidades</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/forms.css">
-    <script src="js/script.js" defer></script>
+    <script src="js/script.js" defer></script> <!-- Script principal -->
+    <script src="js/animation.js" defer></script> <!-- Script de animação -->
 </head>
 
 <body>
-
     <nav>
         <a href="#procurar" id="procurar-btn" class="btn">Procurar Trabalho</a>
         <a href="#criar" id="criar-btn" class="btn">Criar Trabalho</a>
@@ -21,8 +20,8 @@
     </nav>
 
     <div class="container">
-        <h1>Bem-vindo ao Getask</h1>
-        <p>Conecte-se rapidamente com as melhores oportunidades de trabalho.</p>
+        <h1 id="welcome-message">Bem-vindo ao Getask</h1>
+        <p id="welcome-description">Conecte-se rapidamente com as melhores oportunidades de trabalho.</p>
     </div>
 
     <div id="search-form" class="hidden form-container">

@@ -33,6 +33,17 @@ p {
     margin-bottom: 40px;
 }
 
+.fade-out {
+    opacity: 1;
+    transition: opacity 1s ease-out;
+    /* Transição suave */
+}
+
+.fade-out.hidden {
+    opacity: 0;
+    /* Tornar invisível */
+}
+
 /* Media query para telas menores que 768px (mobile) */
 @media (max-width: 768px) {
     nav {
