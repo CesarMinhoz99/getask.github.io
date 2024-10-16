@@ -4,6 +4,7 @@
     color: #003366;
     /* Azul escuro */
     padding: 15px 30px;
+    /* Tamanho padrão dos botões */
     text-decoration: none;
     border-radius: 8px;
     /* Bordas menos arredondadas */
@@ -50,4 +51,37 @@
 
 .close-btn:hover {
     transform: translateY(-3px);
+}
+
+/* Estilos para dispositivos móveis */
+nav {
+    background-color: #000000;
+    /* Preto */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    /* Centraliza os botões */
+    align-items: center;
+    gap: 10px;
+    /* Espaçamento entre os botões */
+    flex-wrap: nowrap;
+    /* Impede que os botões se movam para a linha de baixo */
+    overflow-x: auto;
+    /* Adiciona rolagem horizontal se necessário */
+}
+
+@media (max-width: 768px) {
+    .btn {
+        padding: 10px 20px;
+        /* Menor espaçamento para botões em mobile */
+        font-size: 14px;
+        /* Tamanho da fonte ajustado para mobile */
+    }
+
+    nav {
+        flex-wrap: nowrap;
+        /* Impede que os botões se movam para a linha de baixo */
+        gap: 10px;
+        /* Menor espaçamento entre os botões */
+    }
 }
