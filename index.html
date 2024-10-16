@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Responsividade para dispositivos móveis -->
+    <title>Getask - Conecte-se com Oportunidades</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#procurar" id="procurar-btn" class="btn">Procurar Trabalho</a>
+        <a href="#criar" id="criar-btn" class="btn">Criar Trabalho</a>
+        <a href="#editar" id="editar-btn" class="btn">Editar Trabalho</a>
+    </nav>
+
+    <div class="container">
+        <h1>Bem-vindo ao Getask</h1>
+        <p>Conecte-se rapidamente com as melhores oportunidades de trabalho.</p>
+    </div>
+
+    <div id="search-form" class="hidden form-container">
+        <input type="text" placeholder="Cidade" id="cidade" class="input-field">
+        <div class="button-group">
+            <button id="close-button" class="close-btn">Fechar</button>
+            <button id="search-button" class="btn small">Buscar</button>
+        </div>
+    </div>
+
+    <div id="create-job-form" class="hidden form-container">
+        <input type="text" placeholder="Nome da Vaga" id="job-name" class="input-field">
+        <input type="text" placeholder="Cidade" id="create-cidade" class="input-field">
+        <textarea placeholder="Descrição" id="description" class="input-field"></textarea>
+        <input type="text" placeholder="Valor a ser pago" id="valor" class="input-field">
+        <input type="text" placeholder="Contato (Whatsapp ou Email)" id="contato" class="input-field">
+        <input type="text" placeholder="Hash" id="hash" class="input-field" readonly>
+        <p>Essa senha não deve ser compartilhada pois será usada caso você queira editar o trabalho criado.</p>
+        <div class="button-group">
+            <button id="close-button-create" class="close-btn">Fechar</button>
+            <button id="create-job-button" class="btn">Criar Vaga</button>
+        </div>
+    </div>
+
+    <div id="edit-job-form" class="hidden form-container">
+        <input type="text" placeholder="Hash" id="edit-hash" class="input-field">
+        <div class="button-group">
+            <button id="close-button-edit" class="close-btn">Fechar</button>
+            <button id="edit-job-button" class="btn">Buscar Vaga</button>
+        </div>
+    </div>
+</body>
+
+</html>
