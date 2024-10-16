@@ -1,0 +1,87 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #000000;
+    /* Preto */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+}
+
+.container {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+h1 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Media query para telas menores que 768px (mobile) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        /* Coloca os botões em coluna */
+        padding: 10px;
+        /* Reduz o preenchimento */
+    }
+
+    .btn {
+        width: 100%;
+        /* Botões ocupam a largura total */
+        margin: 5px 0;
+        /* Espaçamento entre botões */
+        padding: 10px;
+        /* Ajusta o padding */
+        font-size: 14px;
+        /* Reduz o tamanho da fonte */
+    }
+
+    .container {
+        padding: 50px 10px;
+        /* Ajusta o preenchimento para telas menores */
+    }
+
+    h1 {
+        font-size: 28px;
+        /* Reduz o tamanho do título */
+    }
+
+    p {
+        font-size: 16px;
+        /* Reduz o tamanho do texto */
+    }
+
+    .form-container {
+        width: 90%;
+        /* Formulários ocupam 90% da largura da tela */
+        max-width: 400px;
+        /* Largura máxima do formulário */
+    }
+
+    .input-field {
+        padding: 8px;
+        /* Ajusta o padding dos campos de entrada */
+    }
+
+    .close-btn {
+        padding: 8px;
+        /* Ajusta o padding do botão de fechar */
+    }
+}
