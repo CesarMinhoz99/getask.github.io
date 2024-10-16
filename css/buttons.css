@@ -1,0 +1,53 @@
+.btn {
+    background-color: #FFEB3B;
+    /* Amarelo */
+    color: #003366;
+    /* Azul escuro */
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    /* Bordas menos arredondadas */
+    font-size: 16px;
+    /* Tamanho da fonte ajustado */
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    border: none;
+    /* Remove borda padrão */
+}
+
+.btn:hover {
+    background-color: #FBC02D;
+    /* Amarelo mais escuro */
+    transform: translateY(-3px);
+}
+
+/* Ajuste para botões menores */
+.btn.small {
+    padding: 8px 12px;
+    /* Botão menor */
+}
+
+/* Estilo do botão de fechar */
+.close-btn {
+    background-color: red;
+    /* Vermelho */
+    color: #FFFFFF;
+    /* Branco */
+    border: none;
+    /* Remove a borda */
+    padding: 10px 15px;
+    font-size: 16px;
+    /* Tamanho da fonte ajustado */
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    /* Mesma borda arredondada que os outros botões */
+    margin-right: 10px;
+    /* Espaçamento à direita do botão de fechar */
+}
+
+.close-btn:hover {
+    transform: translateY(-3px);
+}
