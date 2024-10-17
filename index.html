@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -9,8 +8,8 @@
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/forms.css">
     <link rel="stylesheet" href="css/cards.css"> <!-- Novo CSS para cartões -->
-    <script src="js/script.js" defer></script>
-    <script src="js/animation.js" defer></script>
+    <script src="js/script.js" defer=""></script>
+    <script src="js/animation.js" defer=""></script>
 </head>
 
 <body>
@@ -19,118 +18,68 @@
         <a href="#criar" id="criar-btn" class="btn">Criar Trabalho</a>
         <a href="#editar" id="editar-btn" class="btn">Editar Trabalho</a>
     </nav>
-
     <div class="container" id="welcome-message">
         <h1>Bem-vindo ao Getask</h1>
         <p>Conecte-se rapidamente com as melhores oportunidades de trabalho.</p>
     </div>
-
     <div class="job-list hidden" id="job-list">
         <div class="cards-container">
+            <div class="job-card">
+                <h2>454</h2>
+                <p><strong>Cidade:</strong> 454</p>
+                <p><strong>Descrição:</strong> 5454</p>
+                <p><strong>Valor:</strong> R$ 4545.00</p>
+                <p><strong>Contato:</strong> 545</p>
+            </div>
             <div class="job-card">
                 <h2>Desenvolvedor Frontend</h2>
                 <p><strong>Cidade:</strong> São Paulo</p>
                 <p><strong>Descrição:</strong> Vaga para desenvolvedor frontend com experiência em React.</p>
-                <p><strong>Valor:</strong> R$ 6000,00</p>
-                <p><strong>Contato:</strong> frontend@empresa.com</p>
-            </div>
-            <div class="job-card">
-                <h2>Desenvolvedor Backend</h2>
-                <p><strong>Cidade:</strong> Rio de Janeiro</p>
-                <p><strong>Descrição:</strong> Vaga para desenvolvedor backend com experiência em Node.js.</p>
-                <p><strong>Valor:</strong> R$ 7000,00</p>
-                <p><strong>Contato:</strong> backend@empresa.com</p>
-            </div>
-            <div class="job-card">
-                <h2>Designer Gráfico</h2>
-                <p><strong>Cidade:</strong> Belo Horizonte</p>
-                <p><strong>Descrição:</strong> Procuramos um designer gráfico criativo e inovador.</p>
-                <p><strong>Valor:</strong> R$ 4000,00</p>
-                <p><strong>Contato:</strong> designer@empresa.com</p>
-            </div>
-            <div class="job-card">
-                <h2>Analista de Sistemas</h2>
-                <p><strong>Cidade:</strong> Brasília</p>
-                <p><strong>Descrição:</strong> Análise e desenvolvimento de sistemas em diversas plataformas.</p>
-                <p><strong>Valor:</strong> R$ 5500,00</p>
-                <p><strong>Contato:</strong> analista@empresa.com</p>
-            </div>
-            <div class="job-card">
-                <h2>Gerente de Projetos</h2>
-                <p><strong>Cidade:</strong> Porto Alegre</p>
-                <p><strong>Descrição:</strong> Gerenciamento de projetos de tecnologia da informação.</p>
-                <p><strong>Valor:</strong> R$ 9000,00</p>
-                <p><strong>Contato:</strong> gerente@empresa.com</p>
-            </div>
-            <div class="job-card">
-                <h2>Especialista em Marketing Digital</h2>
-                <p><strong>Cidade:</strong> Curitiba</p>
-                <p><strong>Descrição:</strong> Criação de estratégias de marketing digital e SEO.</p>
-                <p><strong>Valor:</strong> R$ 5000,00</p>
-                <p><strong>Contato:</strong> marketing@empresa.com</p>
-            </div>
-            <div class="job-card">
-                <h2>Engenheiro de Software</h2>
-                <p><strong>Cidade:</strong> Salvador</p>
-                <p><strong>Descrição:</strong> Desenvolvimento de software e integração de sistemas.</p>
-                <p><strong>Valor:</strong> R$ 8000,00</p>
-                <p><strong>Contato:</strong> engsoftware@empresa.com</p>
-            </div>
-            <div class="job-card">
-                <h2>Consultor de TI</h2>
-                <p><strong>Cidade:</strong> Recife</p>
-                <p><strong>Descrição:</strong> Consultoria em tecnologia da informação e infraestrutura.</p>
-                <p><strong>Valor:</strong> R$ 6000,00</p>
-                <p><strong>Contato:</strong> consultor@empresa.com</p>
+                <p><strong>Valor:</strong> R$ 6000.00</p>
+                <p><strong>Contato:</strong> frontend@techsolutions.com</p>
             </div>
             <div class="job-card">
                 <h2>Analista de Dados</h2>
-                <p><strong>Cidade:</strong> Campinas</p>
-                <p><strong>Descrição:</strong> Análise de dados e geração de relatórios.</p>
-                <p><strong>Valor:</strong> R$ 5000,00</p>
-                <p><strong>Contato:</strong> dados@empresa.com</p>
+                <p><strong>Cidade:</strong> Rio de Janeiro</p>
+                <p><strong>Descrição:</strong> Procuramos um analista de dados com conhecimento em SQL e Python.</p>
+                <p><strong>Valor:</strong> R$ 7500.00</p>
+                <p><strong>Contato:</strong> dados@globalcorp.com</p>
             </div>
             <div class="job-card">
-                <h2>Gerente de Vendas</h2>
-                <p><strong>Cidade:</strong> Goiânia</p>
-                <p><strong>Descrição:</strong> Responsável por liderar a equipe de vendas e estratégias.</p>
-                <p><strong>Valor:</strong> R$ 7500,00</p>
-                <p><strong>Contato:</strong> vendas@empresa.com</p>
+                <h2>Designer UX/UI</h2>
+                <p><strong>Cidade:</strong> Belo Horizonte</p>
+                <p><strong>Descrição:</strong> Oportunidade para designer UX/UI para criar interfaces atrativas.</p>
+                <p><strong>Valor:</strong> R$ 5000.00</p>
+                <p><strong>Contato:</strong> design@webinnovators.com</p>
             </div>
             <div class="job-card">
-                <h2>Redator Publicitário</h2>
+                <h2>Gerente de Projetos</h2>
+                <p><strong>Cidade:</strong> Curitiba</p>
+                <p><strong>Descrição:</strong> Buscamos gerente de projetos com experiência em metodologias ágeis.</p>
+                <p><strong>Valor:</strong> R$ 9000.00</p>
+                <p><strong>Contato:</strong> gerente@creativeminds.com</p>
+            </div>
+            <div class="job-card">
+                <h2>Desenvolvedor Backend</h2>
+                <p><strong>Cidade:</strong> Porto Alegre</p>
+                <p><strong>Descrição:</strong> Vaga para desenvolvedor backend com experiência em Node.js.</p>
+                <p><strong>Valor:</strong> R$ 7000.00</p>
+                <p><strong>Contato:</strong> backend@devworks.com</p>
+            </div>
+            <div class="job-card">
+                <h2>Instrutor de Programação</h2>
                 <p><strong>Cidade:</strong> Fortaleza</p>
-                <p><strong>Descrição:</strong> Criação de conteúdos publicitários para diversas mídias.</p>
-                <p><strong>Valor:</strong> R$ 3000,00</p>
-                <p><strong>Contato:</strong> redator@empresa.com</p>
+                <p><strong>Descrição:</strong> Estamos procurando um instrutor de programação para cursos online.</p>
+                <p><strong>Valor:</strong> R$ 4500.00</p>
+                <p><strong>Contato:</strong> instrutor@edutech.com</p>
             </div>
             <div class="job-card">
-                <h2>Coordenador de Projetos</h2>
-                <p><strong>Cidade:</strong> São Luís</p>
-                <p><strong>Descrição:</strong> Coordenação de projetos em diferentes áreas.</p>
-                <p><strong>Valor:</strong> R$ 8500,00</p>
-                <p><strong>Contato:</strong> coordenador@empresa.com</p>
-            </div>
-            <div class="job-card">
-                <h2>Analista de Recursos Humanos</h2>
-                <p><strong>Cidade:</strong> Natal</p>
-                <p><strong>Descrição:</strong> Gestão de pessoas e processos de recrutamento.</p>
-                <p><strong>Valor:</strong> R$ 4000,00</p>
-                <p><strong>Contato:</strong> rh@empresa.com</p>
-            </div>
-            <div class="job-card">
-                <h2>Desenvolvedor Mobile</h2>
-                <p><strong>Cidade:</strong> Florianópolis</p>
-                <p><strong>Descrição:</strong> Desenvolvimento de aplicativos móveis para iOS e Android.</p>
-                <p><strong>Valor:</strong> R$ 7000,00</p>
-                <p><strong>Contato:</strong> mobile@empresa.com</p>
-            </div>
-            <div class="job-card">
-                <h2>Auditor Interno</h2>
-                <p><strong>Cidade:</strong> Aracaju</p>
-                <p><strong>Descrição:</strong> Avaliação e auditoria de processos internos.</p>
-                <p><strong>Valor:</strong> R$ 5000,00</p>
-                <p><strong>Contato:</strong> auditor@empresa.com</p>
+                <h2>Especialista em Marketing Digital</h2>
+                <p><strong>Cidade:</strong> Salvador</p>
+                <p><strong>Descrição:</strong> Vaga para especialista em marketing digital com foco em redes sociais.
+                </p>
+                <p><strong>Valor:</strong> R$ 5500.00</p>
+                <p><strong>Contato:</strong> marketing@marketinghub.com</p>
             </div>
         </div>
     </div>
@@ -145,12 +94,13 @@
     </div>
 
     <div id="create-job-form" class="hidden form-container">
+        <input type="text" placeholder="Nome da Empresa" id="company-name" class="input-field">
         <input type="text" placeholder="Nome da Vaga" id="job-name" class="input-field">
         <input type="text" placeholder="Cidade" id="create-cidade" class="input-field">
         <textarea placeholder="Descrição" id="description" class="input-field"></textarea>
         <input type="text" placeholder="Valor a ser pago" id="valor" class="input-field">
         <input type="text" placeholder="Contato (Whatsapp ou Email)" id="contato" class="input-field">
-        <input type="text" placeholder="Hash" id="hash" class="input-field" readonly>
+        <input type="text" placeholder="Hash" id="hash" class="input-field" readonly="">
         <p>Essa senha não deve ser compartilhada pois será usada caso você queira editar o trabalho criado.</p>
         <div class="button-group">
             <button id="close-button-create" class="close-btn">Fechar</button>
@@ -165,6 +115,8 @@
             <button id="edit-job-button" class="btn">Buscar Vaga</button>
         </div>
     </div>
+
+
 </body>
 
 </html>
